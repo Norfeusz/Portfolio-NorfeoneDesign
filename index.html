@@ -79,8 +79,8 @@
 
   async function loadLayoutAndScript() {
     await Promise.all([
-      loadHTML('header', '../html/header.html'),
-      loadHTML('footer', '../html/footer.html')
+      loadHTML('header', './header.html'),
+      loadHTML('footer', './footer.html')
     ])
 
     const script = document.createElement('script')
