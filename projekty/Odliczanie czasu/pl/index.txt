@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Counter</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/547813f3fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="counter-app">
+
+        <div class="settings">
+            <h1 class="settings-title"> USTAWIENIA</h1>
+<!--         
+            <div class="event-name"> -->
+            <label for="event-name">Nazwa wydarzenia:</label>
+            <input type="text" id="event-name">
+           
+            <table class="date">
+                <tr>
+                    <td><label for="event-day">Dzień:</label></td>
+                    <td><label for="event-month">Miesiąc:</label></td>
+                    <td><label for="event-year">Rok:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="event-day" min="1" max="31" value="1"></td>
+                    <td><input type="number" id="event-month" min="1" max="12" value="1"></td>
+                    <td><input type="number" id="event-year" min="2024" value="2024"></td>
+                </tr>
+            </table>
+            
+            <label for="event-image">Link do obrazka:</label>
+            <input type="text" id="event-image" value="https://cdn.pixabay.com/photo/2023/12/01/21/50/sunset-8424565_1280.jpg"> 
+            
+            
+            <button class="save">Zapisz</button>
+    </div>
+
+        <div class="app-body">
+        <div class="image-section">
+            <img src="https://cdn.pixabay.com/photo/2023/12/01/21/50/sunset-8424565_1280.jpg" alt="" class="photo">
+            <button class="settings-btn"><i class="fa-solid fa-sliders"></i></button>
+        </div>
+        <div class="time-section">
+            <h3><span class="event">Data </span>    za:</h3>
+            <div class="time-cards">
+                <div class="card">
+                    <p class="days-count number">0</p>
+                    <p class="card-title" id="day-title">Dni</p>
+                </div>
+                <div class="card">
+                    <p class="hours-count number">0</p>
+                    <p class="card-title" id="hours-title">Godzin</p>
+                </div>
+                <div class="card">
+                    <p class="minutes-count number">0</p>
+                    <p class="card-title" id="minutes-title">Minut</p>
+                </div>
+                <div class="card">
+                    <p class="seconds-count number">0</p>
+                    <p class="card-title" id="secs-title">Sekund</p>
+                </div>
+            </div>
+        </div>
+    
+        
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
