@@ -2,23 +2,22 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>norfeusz world</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Raleway:wght@300;500;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <script src="https://kit.fontawesome.com/547813f3fc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <div id="header"></div>
 
     <main>
-
         <h2 class="aboutmeh2"> O mnie</h2>
 
         <article class="about-me-box multi-tasking">
@@ -29,10 +28,9 @@
                 </button>
                 <p class="about-me-p renaissancep">
                 </p>
-
-
             </div>
         </article>
+
         <article class="about-me-box new-passion">
             <div class="about-me-bg"></div>
             <div class="about-me-text ">
@@ -41,7 +39,6 @@
                 </button>
                 <p class="about-me-p passionp">
                 </p>
-                <!-- <button class="read-more">zobacz więcej</button> -->
             </div>
         </article>
 
@@ -52,10 +49,10 @@
                     <h3 class="about-me-h3 hobbiesh3">zajawki</h3>
                 </button>
                 <p class="about-me-p hobbiesp">
-
                 </p>
             </div>
         </article>
+
         <article class="about-me-box private">
             <div class="about-me-bg"></div>
             <div class="about-me-text">
@@ -63,43 +60,41 @@
                     <h3 class="about-me-h3 privateh3">prywatnie </h3>
                 </button>
                 <p class="about-me-p privatep">
-
                 </p>
             </div>
         </article>
     </main>
+
     <div id="footer"></div>
-    </div>
-<script>
-  async function loadHTML(id, url) {
-    const res = await fetch(url)
-    const html = await res.text()
-    document.getElementById(id).innerHTML = html
-  }
 
-  async function loadLayoutAndScript() {
-    await Promise.all([
-      loadHTML('header', './header.html'),
-      loadHTML('footer', './footer.html')
-    ])
-
-    const script = document.createElement('script')
-    script.src = '../js/script.js'
-    script.onload = () => {
-      const savedLanguage = localStorage.getItem('language')
-      if (savedLanguage === 'en') {
-        englishLanguage()
-      } else {
-        polishLanguage() // domyślnie
+    <script>
+      async function loadHTML(id, url) {
+        const res = await fetch(url)
+        const html = await res.text()
+        document.getElementById(id).innerHTML = html
       }
-    }
-    document.body.appendChild(script)
-  }
 
-  loadLayoutAndScript()
-</script>
+      async function loadLayoutAndScript() {
+        await Promise.all([
+          loadHTML('header', './header.html'),
+          loadHTML('footer', './footer.html')
+        ])
 
+        const script = document.createElement('script')
+        script.src = 'js/script.js'
+        script.onload = () => {
+          const savedLanguage = localStorage.getItem('language')
+          if (savedLanguage === 'en') {
+            englishLanguage()
+          } else {
+            polishLanguage() // domyślnie
+          }
+        }
+        document.body.appendChild(script)
+      }
 
+      loadLayoutAndScript()
+    </script>
 </body>
 
 </html>
