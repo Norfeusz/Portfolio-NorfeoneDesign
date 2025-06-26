@@ -2,17 +2,17 @@
 const chooseCvLanguage = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../pliki/cv-pl.pdf', '_blank')}else{
-        window.open('../pliki/cv-en.pdf', '_blank')
+    window.open('./pliki/cv-pl.pdf', '_blank')}else{
+        window.open('./pliki/cv-en.pdf', '_blank')
     }
 } 
 const chooseDownloadLanguage = () => {
     const actualLanguageDownload = localStorage.getItem('language');
     let downloadLink;
     if (actualLanguageDownload === 'pl') {
-        downloadLink = '../pliki/cv-pl.pdf';
+        downloadLink = './pliki/cv-pl.pdf';
     } else {
-        downloadLink = '../pliki/cv-en.pdf';
+        downloadLink = './pliki/cv-en.pdf';
     }
 
     // Create an anchor element

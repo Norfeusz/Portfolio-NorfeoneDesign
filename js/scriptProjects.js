@@ -6,15 +6,15 @@ const converterHtml = document.querySelector('.converter-html')
 const converterWebsiteOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Konwerter temperatury/pl/index.html', '_blank')}else{
-        window.open('../projekty/Konwerter temperatury/en/index.html', '_blank')
+    window.open('./projekty/Konwerter temperatury/pl/index.html', '_blank')}else{
+        window.open('./projekty/Konwerter temperatury/en/index.html', '_blank')
     }
 }
 const converterHtmlOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Konwerter temperatury/pl/index.txt', '_blank')}else{
-        window.open('../projekty/Konwerter temperatury/en/index.txt', '_blank')
+    window.open('./projekty/Konwerter temperatury/pl/index.txt', '_blank')}else{
+        window.open('./projekty/Konwerter temperatury/en/index.txt', '_blank')
     }
 }
 
@@ -28,15 +28,15 @@ const weatherHtml = document.querySelector('.weather-html')
 const weatherWebsiteOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/WeatherApp_pliki_startowe/pl/index.html', '_blank')}else{
-        window.open('../projekty/WeatherApp_pliki_startowe/en/index.html', '_blank')
+    window.open('./projekty/WeatherApp_pliki_startowe/pl/index.html', '_blank')}else{
+        window.open('./projekty/WeatherApp_pliki_startowe/en/index.html', '_blank')
     }
 }
 const weatherHtmlOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/WeatherApp_pliki_startowe/pl/index.txt', '_blank')}else{
-        window.open('../projekty/WeatherApp_pliki_startowe/en/index.txt', '_blank')
+    window.open('./projekty/WeatherApp_pliki_startowe/pl/index.txt', '_blank')}else{
+        window.open('./projekty/WeatherApp_pliki_startowe/en/index.txt', '_blank')
     }
 }
 
@@ -52,22 +52,22 @@ const financesJs = document.querySelector('.finances-js')
 const financesWebsiteOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Menadżer finansów/pl/index.html', '_blank')}else{
-        window.open('../projekty/Menadżer finansów/en/index.html', '_blank')
+    window.open('./projekty/Menadżer finansów/pl/index.html', '_blank')}else{
+        window.open('./projekty/Menadżer finansów/en/index.html', '_blank')
     }
 }
 const financesHtmlOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Menadżer finansów/pl/index.txt', '_blank')}else{
-        window.open('../projekty/Menadżer finansów/en/index.txt', '_blank')
+    window.open('./projekty/Menadżer finansów/pl/index.txt', '_blank')}else{
+        window.open('./projekty/Menadżer finansów/en/index.txt', '_blank')
     }
 }
 const financesJsOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Menadżer finansów/script.js', '_blank')}else{
-        window.open('../projekty/Menadżer finansów/en/script.js', '_blank')
+    window.open('./projekty/Menadżer finansów/script.js', '_blank')}else{
+        window.open('./projekty/Menadżer finansów/en/script.js', '_blank')
     }
 }
 
@@ -83,22 +83,22 @@ const timerJs = document.querySelector('.timer-js')
 const timerWebsiteOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Stoper/pl/index.html', '_blank')}else{
-        window.open('../projekty/Stoper/en/index.html', '_blank')
+    window.open('./projekty/Stoper/pl/index.html', '_blank')}else{
+        window.open('./projekty/Stoper/en/index.html', '_blank')
     }
 }
 const timerHtmlOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Stoper/pl/index.txt', '_blank')}else{
-        window.open('../projekty/Stoper/en/index.txt', '_blank')
+    window.open('./projekty/Stoper/pl/index.txt', '_blank')}else{
+        window.open('./projekty/Stoper/en/index.txt', '_blank')
     }
 }
 const timerJsOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Stoper/script.js', '_blank')}else{
-        window.open('../projekty/Stoper/en/script.js', '_blank')
+    window.open('./projekty/Stoper/script.js', '_blank')}else{
+        window.open('./projekty/Stoper/en/script.js', '_blank')
     }
 }
 
@@ -114,15 +114,15 @@ const drinksHtml = document.querySelector('.drinks-html')
 const drinksWebsiteOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Wyszukiwarka napojów/pl/index.html', '_blank')}else{
-        window.open('../projekty/Wyszukiwarka napojów/en/index.html', '_blank')
+    window.open('./projekty/Wyszukiwarka napojów/pl/index.html', '_blank')}else{
+        window.open('./projekty/Wyszukiwarka napojów/en/index.html', '_blank')
     }
 }
 const drinksHtmlOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Wyszukiwarka napojów/pl/index.txt', '_blank')}else{
-        window.open('../projekty/Wyszukiwarka napojów/en/index.txt', '_blank')
+    window.open('./projekty/Wyszukiwarka napojów/pl/index.txt', '_blank')}else{
+        window.open('./projekty/Wyszukiwarka napojów/en/index.txt', '_blank')
     }
 }
 
@@ -138,22 +138,22 @@ const notepadJs = document.querySelector('.notepad-js')
 const notepadWebsiteOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Notatnik/pl/index.html', '_blank')}else{
-        window.open('../projekty/Notatnik/en/index.html', '_blank')
+    window.open('./projekty/Notatnik/pl/index.html', '_blank')}else{
+        window.open('./projekty/Notatnik/en/index.html', '_blank')
     }
 }
 const notepadHtmlOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Notatnik/pl/index.txt', '_blank')}else{
-        window.open('../projekty/Notatnik/en/index.txt', '_blank')
+    window.open('./projekty/Notatnik/pl/index.txt', '_blank')}else{
+        window.open('./projekty/Notatnik/en/index.txt', '_blank')
     }
 }
 const notepadJsOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Notatnik/script.js', '_blank')}else{
-        window.open('../projekty/Notatnik/en/script.js', '_blank')
+    window.open('./projekty/Notatnik/script.js', '_blank')}else{
+        window.open('./projekty/Notatnik/en/script.js', '_blank')
     }
 }
 
@@ -170,22 +170,22 @@ const countdownJs = document.querySelector('.countdown-js')
 const countdownWebsiteOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Odliczanie czasu/pl/index.html', '_blank')}else{
-        window.open('../projekty/Odliczanie czasu/en/index.html', '_blank')
+    window.open('./projekty/Odliczanie czasu/pl/index.html', '_blank')}else{
+        window.open('./projekty/Odliczanie czasu/en/index.html', '_blank')
     }
 }
 const countdownHtmlOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Odliczanie czasu/pl/index.txt', '_blank')}else{
-        window.open('../projekty/Odliczanie czasu/en/index.txt', '_blank')
+    window.open('./projekty/Odliczanie czasu/pl/index.txt', '_blank')}else{
+        window.open('./projekty/Odliczanie czasu/en/index.txt', '_blank')
     }
 }
 const countdownJsOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Odliczanie czasu/script.js', '_blank')}else{
-        window.open('../projekty/Odliczanie czasu/en/script.js', '_blank')
+    window.open('./projekty/Odliczanie czasu/script.js', '_blank')}else{
+        window.open('./projekty/Odliczanie czasu/en/script.js', '_blank')
     }
 }
 
@@ -202,22 +202,22 @@ const calculatorJs = document.querySelector('.calculator-js')
 const calculatorWebsiteOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Kalkulator napiwków/pl/index.html', '_blank')}else{
-        window.open('../projekty/Kalkulator napiwków/en/index.html', '_blank')
+    window.open('./projekty/Kalkulator napiwków/pl/index.html', '_blank')}else{
+        window.open('./projekty/Kalkulator napiwków/en/index.html', '_blank')
     }
 }
 const calculatorHtmlOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Kalkulator napiwków/pl/index.txt', '_blank')}else{
-        window.open('../projekty/Kalkulator napiwków/en/index.txt', '_blank')
+    window.open('./projekty/Kalkulator napiwków/pl/index.txt', '_blank')}else{
+        window.open('./projekty/Kalkulator napiwków/en/index.txt', '_blank')
     }
 }
 const calculatorJsOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Kalkulator napiwków/script.js', '_blank')}else{
-        window.open('../projekty/Kalkulator napiwków/en/script.js', '_blank')
+    window.open('./projekty/Kalkulator napiwków/script.js', '_blank')}else{
+        window.open('./projekty/Kalkulator napiwków/en/script.js', '_blank')
     }
 }
 
@@ -234,22 +234,22 @@ const walidatorJs = document.querySelector('.walidator-js')
 const walidatorWebsiteOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Walidator hasła/pl/index.html', '_blank')}else{
-        window.open('../projekty/Walidator hasła/en/index.html', '_blank')
+    window.open('./projekty/Walidator hasła/pl/index.html', '_blank')}else{
+        window.open('./projekty/Walidator hasła/en/index.html', '_blank')
     }
 }
 const walidatorHtmlOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Walidator hasła/pl/index.txt', '_blank')}else{
-        window.open('../projekty/Walidator hasła/en/index.txt', '_blank')
+    window.open('./projekty/Walidator hasła/pl/index.txt', '_blank')}else{
+        window.open('./projekty/Walidator hasła/en/index.txt', '_blank')
     }
 }
 const walidatorJsOpen = ()=>{
     const actualLanguage = localStorage.getItem('language')
     if(actualLanguage === 'pl'){
-    window.open('../projekty/Walidator hasła/script.js', '_blank')}else{
-        window.open('../projekty/Walidator hasła/en/script.js', '_blank')
+    window.open('./projekty/Walidator hasła/script.js', '_blank')}else{
+        window.open('./projekty/Walidator hasła/en/script.js', '_blank')
     }
 }
 
