@@ -1,16 +1,3 @@
-const cssReady = document.querySelector('link[href*="style.css"]')
-
-if (cssReady) {
-	cssReady.addEventListener('load', () => {
-		document.body.classList.remove('preload')
-	})
-} else {
-	// fallback na wypadek braku pliku CSS
-	window.addEventListener('load', () => {
-		document.body.classList.remove('preload')
-	})
-}
-
 /*burger menu*/
 const burgerBtn = document.querySelector('.burger-icon')
 const burgerMenu = document.querySelector('.burger-menu')
