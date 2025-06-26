@@ -61,7 +61,7 @@ header {
 	color: #ddd;
 }
 .header-txt a:visited {
-  color: inherit; 
+  color: #ddd;
 }
 .header-span {
 	color: rgb(22, 48, 127);

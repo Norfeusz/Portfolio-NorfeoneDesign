@@ -51,41 +51,41 @@
     </main>
     <div id="footer"></div>
     </div>
-  <script>
-    async function loadHTML(id, url) {
-        const res = await fetch(url)
-        const html = await res.text()
-        document.getElementById(id).innerHTML = html
-    }
-
-    async function loadLayoutAndScripts() {
-        await Promise.all([
-            loadHTML('header', './header.html'),
-            loadHTML('footer', './footer.html')
-        ])
-
-        // Załaduj główny skrypt
-        const scriptMain = document.createElement('script')
-        scriptMain.src = './js/script.js'
-        scriptMain.onload = () => {
-            const savedLanguage = localStorage.getItem('language')
-            if (savedLanguage === 'en') {
-                englishLanguage()
-            } else {
-                polishLanguage()
-            }
-
-            // Teraz dopiero ładujemy scriptContact.js
-            const scriptContact = document.createElement('script')
-            scriptContact.src = './js/scriptContact.js'
-            document.body.appendChild(scriptContact)
+    <script>
+        async function loadHTML(id, url) {
+            const res = await fetch(url)
+            const html = await res.text()
+            document.getElementById(id).innerHTML = html
         }
 
-        document.body.appendChild(scriptMain)
-    }
+        async function loadLayoutAndScripts() {
+            await Promise.all([
+                loadHTML('header', './header.html'),
+                loadHTML('footer', './footer.html')
+            ])
 
-    loadLayoutAndScripts()
-</script>
+            // Załaduj główny skrypt
+            const scriptMain = document.createElement('script')
+            scriptMain.src = './js/script.js'
+            scriptMain.onload = () => {
+                const savedLanguage = localStorage.getItem('language')
+                if (savedLanguage === 'en') {
+                    englishLanguage()
+                } else {
+                    polishLanguage()
+                }
+
+                // Teraz dopiero ładujemy scriptContact.js
+                const scriptContact = document.createElement('script')
+                scriptContact.src = './js/scriptContact.js'
+                document.body.appendChild(scriptContact)
+            }
+
+            document.body.appendChild(scriptMain)
+        }
+
+        loadLayoutAndScripts()
+    </script>
 
 </body>
 

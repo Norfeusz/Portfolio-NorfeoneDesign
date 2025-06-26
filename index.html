@@ -68,32 +68,32 @@
     <div id="footer"></div>
 
     <script>
-      async function loadHTML(id, url) {
-        const res = await fetch(url)
-        const html = await res.text()
-        document.getElementById(id).innerHTML = html
-      }
-
-      async function loadLayoutAndScript() {
-        await Promise.all([
-          loadHTML('header', './header.html'),
-          loadHTML('footer', './footer.html')
-        ])
-
-        const script = document.createElement('script')
-        script.src = './js/script.js'
-        script.onload = () => {
-          const savedLanguage = localStorage.getItem('language')
-          if (savedLanguage === 'en') {
-            englishLanguage()
-          } else {
-            polishLanguage() // domyślnie
-          }
+        async function loadHTML(id, url) {
+            const res = await fetch(url)
+            const html = await res.text()
+            document.getElementById(id).innerHTML = html
         }
-        document.body.appendChild(script)
-      }
 
-      loadLayoutAndScript()
+        async function loadLayoutAndScript() {
+            await Promise.all([
+                loadHTML('header', './header.html'),
+                loadHTML('footer', './footer.html')
+            ])
+
+            const script = document.createElement('script')
+            script.src = './js/script.js'
+            script.onload = () => {
+                const savedLanguage = localStorage.getItem('language')
+                if (savedLanguage === 'en') {
+                    englishLanguage()
+                } else {
+                    polishLanguage() // domyślnie
+                }
+            }
+            document.body.appendChild(script)
+        }
+
+        loadLayoutAndScript()
     </script>
 </body>
 

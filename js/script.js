@@ -78,7 +78,7 @@ const dictionary = {
 	yearstable: { pl: 'lata', en: 'years' },
 	schooltable: { pl: 'szkoła', en: 'school' },
 	profiletable: { pl: 'profil', en: 'profile' },
-	
+
 	uek: { pl: 'Uniwersytet Ekonomiczny w Krakowie', en: 'Cracow University of Economics' },
 	engineer: { pl: 'inżynier logistyki międzynarodowej', en: 'international logistics engineer' },
 	highschool: { pl: 'VII Liceum ogólnokształcące w Krakowie', en: 'VII High School in Cracow' },
@@ -105,7 +105,6 @@ const dictionary = {
 	forklifts: { pl: 'Obsługa wózków widłowych', en: 'Forklifts operation' },
 	udt: { pl: 'Uprawdnienia UTD', en: 'UDT qualifications' },
 
-
 	/*projekty*/
 	projectsh2: { pl: 'Moje projekty', en: 'My projects' },
 	website: { pl: 'strona', en: 'website' },
@@ -122,7 +121,6 @@ const dictionary = {
 	seecvs: { pl: 'Zobacz CV', en: 'See CV' },
 	downloadcvs: { pl: 'Pobierz CV', en: 'Download CV' },
 	phone: { pl: 'telefon / WhatsApp:', en: 'phone / WhatsApp:' },
-
 }
 
 const setLanguage = language => {
