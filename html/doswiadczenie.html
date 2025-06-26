@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>norfeusz design</title>
+    <title>norfeusz world</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,48 +15,7 @@
 </head>
 
 <body>
-    <div class="burger-menu">
-        <button class="close-menu"><i class="fa-solid fa-xmark"></i></button>
-        <h1>norfeone<span class="header-span">Design</span></h1>
-        <ul class="burger-list">
-            <li class="burger-item"><a href="../html/index.html" class="aboutburger">o mnie</a></li>
-            <li class="burger-item"><a href="../html/doswiadczenie.html" class="experienceburger">doświadczenie</a></li>
-            <li class="burger-item"><a href="../html/projekty.html" class="projectsburger">projekty</a></li>
-            <li class="burger-item"><a href="../html/kontakt.html" class="contactburger">kontakt</a></li>
-        </ul>
-    </div>
-    <div class="all">
-        <header>
-            <div class="header-img">
-                <div class="header-txt">
-                    <h1>norfeone<span class="header-span">Design</span></h1>
-                    <p class="road translation">w drodze na szczyt możliwości</p>
-                </div>
-                <div class="header-bg"></div>
-            </div>
-        </header>
-        <nav class="nav">
-            <button class="burger-polish"> </button>
-            <button class="burger-english"></button>
-            <button class="burger-icon"><i class="fa-solid fa-bars"></i></button>
-            <ul>
-                <li class="nav-item"><a href="../html/index.html" class="about">o mnie</a></li>
-                <li class="nav-item"><a href="../html/doswiadczenie.html" class="experience">doświadczenie</a></li>
-                <li class="nav-item"><a href="../html/projekty.html" class="projects">projekty</a></li>
-                <li class="nav-item"><a href="../html/kontakt.html" class="contact">kontakt</a></li>
-                <li class="nav-item languages">
-                    <button class="english"></button>
-                    <button class="polish"> </button>
-                    <div class="polish-info language-info">
-                        <p>język polski</p>
-                    </div>
-                    <div class="english-info language-info">
-                        <p>english language</p>
-                    </div>
-
-                </li>
-            </ul>
-        </nav>
+   <div id="header"></div>
 
         <main>
 
@@ -103,6 +62,11 @@
 
                 </thead>
                 <tbody>
+                    <tr>
+                        <td class="years-table">2024-...</td>
+                        <td class="school-table ">Cube Group</td>
+                        <td class="profile-table ">Traffic assistant</td>
+                    </tr>
                     <tr>
                         <td class="years-table">2023-2024</td>
                         <td class="school-table ">Jumbo Distribution Center</td>
@@ -164,7 +128,17 @@
                 <tbody>
                     <tr>
                         <td class="years-table">2023-...</td>
-                        <td class="school-table">html, css, javaScript, react.js</td>
+                        <td class="school-table">html, css, javaScript, react., Word Presss</td>
+                        <td class="profile-table intermediate">Średnio-zaawansowany</td>
+                    </tr>
+                    <tr>
+                        <td class="years-table">2024-...</td>
+                        <td class="school-table">php, node.js, sass, git, bootstrap</td>
+                        <td class="profile-table basic">Podstawowy</td>
+                    </tr>
+                    <tr>
+                        <td class="years-table">2024-...</td>
+                        <td class="school-table">Ingenious, GTM, Campaign Manager</td>
                         <td class="profile-table intermediate">Średnio-zaawansowany</td>
                     </tr>
                     <tr>
@@ -195,21 +169,37 @@
                 </tbody>
             </table>
         </main>
-
-        <footer>&copy;2024 norfeone<span class="footer-span">Design</span>
-            <span class="icon-box">
-                <a href="https://www.facebook.com/don.norfeone" target="_blank"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/norfeusz.gosciu/" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></i></a>
-                <a href="https://www.linkedin.com/in/norbert-sarapata-a2a897224/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></i></a>
-                <a href="https://www.youtube.com/@norfeuszgosciu6746" target="_blank"><i
-                        class="fa-brands fa-youtube"></i></i></a>
-            </span>
-        </footer>
+        <div id="footer"></div>
     </div>
-    <script src="../js/script.js"></script>
+  <script>
+  async function loadHTML(id, url) {
+    const res = await fetch(url)
+    const html = await res.text()
+    document.getElementById(id).innerHTML = html
+  }
+
+  async function loadLayoutAndScript() {
+    await Promise.all([
+      loadHTML('header', '../html/header.html'),
+      loadHTML('footer', '../html/footer.html')
+    ])
+
+    const script = document.createElement('script')
+    script.src = '../js/script.js'
+    script.onload = () => {
+      const savedLanguage = localStorage.getItem('language')
+      if (savedLanguage === 'en') {
+        englishLanguage()
+      } else {
+        polishLanguage() // domyślnie
+      }
+    }
+    document.body.appendChild(script)
+  }
+
+  loadLayoutAndScript()
+</script>
+
 </body>
 
 </html>

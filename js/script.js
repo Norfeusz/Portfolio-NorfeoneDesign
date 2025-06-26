@@ -1,3 +1,16 @@
+const cssReady = document.querySelector('link[href*="style.css"]')
+
+if (cssReady) {
+	cssReady.addEventListener('load', () => {
+		document.body.classList.remove('preload')
+	})
+} else {
+	// fallback na wypadek braku pliku CSS
+	window.addEventListener('load', () => {
+		document.body.classList.remove('preload')
+	})
+}
+
 /*burger menu*/
 const burgerBtn = document.querySelector('.burger-icon')
 const burgerMenu = document.querySelector('.burger-menu')
@@ -70,22 +83,24 @@ const dictionary = {
 
 	privateh3: { pl: 'prywatnie', en: 'privately' },
 	privatep: {
-		pl: ' Jestem jedynakiem. Mam za to najcudowniejszych rodziców, najukochańszą dziewczynę i grono		najwspanialszych znajomych pod słońcem. Choć już nie mieszkam w rodzinnym domu, mogę śmiało		powiedzieć, że mam dwa najfajniejsze psiaki i dwa najśmieszniejsze koty na świecie (cała czwórka		została z rodzicami).',
-		en: 'I am an only child. However, I have the most wonderful parents, the most beloved girlfriend, and a circle of the greatest friends under the sun. Even though I no longer live in the family home, I can confidently say that I have the two coolest dogs and the two funniest cats in the world (the whole bunch stayed with my parents).',
+		pl: ' Jestem jedynakiem. Mam za to najcudowniejszych rodziców, najukochańszą dziewczynę i paczkę		najwspanialszych znajomych pod słońcem i najwierniejszego psiaka adoptowanego ze schroniska. Choć już nie mieszkam w rodzinnym domu, mogę śmiało		powiedzieć, że mam trzy najfajniejsze przyszywane pieski i trzy najśmieszniejsze koty na świecie (cała szóstka		została z rodzicami).',
+		en: 'I am an only child. I have the most wonderful parents, the most beloved girlfriend, a bunch of the most wonderful friends under the sun and the most loyal dog adopted from a shelter. Although I no longer live in my family home, I can safely say that I have three of the coolest foster dogs and three of the funniest cats in the world (all six stayed with my parents).',
 	},
 	/*doświadczenie*/
 	experienceh2: { pl: 'edukacja', en: 'education' },
 	yearstable: { pl: 'lata', en: 'years' },
 	schooltable: { pl: 'szkoła', en: 'school' },
 	profiletable: { pl: 'profil', en: 'profile' },
-	works: { pl: 'praca', en: 'works' },
-	companytable: { pl: 'firma', en: 'company' },
-	positiontable: { pl: 'stanowisko', en: 'position' },
-	skills: { pl: 'umiejętności', en: 'skills' },
+	
 	uek: { pl: 'Uniwersytet Ekonomiczny w Krakowie', en: 'Cracow University of Economics' },
 	engineer: { pl: 'inżynier logistyki międzynarodowej', en: 'international logistics engineer' },
 	highschool: { pl: 'VII Liceum ogólnokształcące w Krakowie', en: 'VII High School in Cracow' },
 	matphis: { pl: 'mat-fiz', en: 'mathematics and physic' },
+
+	works: { pl: 'praca', en: 'works' },
+	companytable: { pl: 'firma', en: 'company' },
+	positiontable: { pl: 'stanowisko', en: 'position' },
+
 	coordinator: { pl: 'Koordynator ds. logistyki', en: 'Logistics Coordinator' },
 	driver: { pl: 'Kierowca', en: 'Driver' },
 	pizzer: { pl: 'Pizzer', en: 'Pizzer-man' },
@@ -93,11 +108,17 @@ const dictionary = {
 	warehouselog: { pl: 'Logistyk Magazynu', en: 'Warehouse Logistic' },
 	jurnalist: { pl: 'Redaktor', en: 'Jurnalist' },
 	warehouseman: { pl: 'Magazynier', en: 'Warehouse Worker' },
+
+	skills: { pl: 'umiejętności', en: 'skills' },
+
 	intermediate: { pl: 'średnio-zaawanoswany', en: 'intermediate' },
+	basic: { pl: 'podstawowy', en: 'basic' },
 	englishskill: { pl: 'Język angielski', en: 'English language' },
 	drivingl: { pl: 'Prawo jazdy', en: 'Driving license' },
 	forklifts: { pl: 'Obsługa wózków widłowych', en: 'Forklifts operation' },
 	udt: { pl: 'Uprawdnienia UTD', en: 'UDT qualifications' },
+
+
 	/*projekty*/
 	projectsh2: { pl: 'Moje projekty', en: 'My projects' },
 	website: { pl: 'strona', en: 'website' },
