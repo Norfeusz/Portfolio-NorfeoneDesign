@@ -208,6 +208,14 @@ footer .fa-brands:hover {
   color: var(--blue);
 }
 
+.icon-box a {
+  text-decoration: none;
+  color: var(--light-gray);
+}
+.icon-box a:visited {
+  color: var(--light-gray);
+}
+
 /*media (layout-specific)*/
 @media (max-width: 48rem) {
   header .header-img {
@@ -389,7 +397,7 @@ footer .fa-brands:hover {
     font-size: 2.25rem;
   }
   .multi-tasking {
-    background-image: url("../img/renesans-small.jpg");
+    background-image: url("../img/renesans-smartphone.jpg");
   }
   .about-me-p {
     margin-top: 0.625rem;
@@ -402,10 +410,10 @@ footer .fa-brands:hover {
     background-position: center;
   }
   .new-passion {
-    background-image: url("../img/new-passion-small.jpg");
+    background-image: url("../img/new-passion-smartphone.jpg");
   }
   .hobbies {
-    background-image: url("../img/hobbies-small.jpg");
+    background-image: url("../img/hobbies-smartphone.jpg");
   }
   .private {
     background-image: url("../img/prive.jpg");
@@ -533,7 +541,7 @@ footer .fa-brands:hover {
     height: 3.125rem;
   }
 }
-@media (min-width: 48.0625rem) {
+@media (min-width: 48.0625rem) and (max-width: 62rem) {
   .experience-table {
     margin: 0.625rem auto;
     font-size: 1.25rem;
@@ -712,7 +720,6 @@ footer .fa-brands:hover {
   background-image: url("../img/drinks.png");
 }
 
-/*media (projects-specific)*/
 @media (max-width: 48rem) {
   .projects-h2 {
     margin: 2.5rem;

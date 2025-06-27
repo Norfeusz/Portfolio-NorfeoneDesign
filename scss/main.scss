@@ -1,6 +1,9 @@
-@use 'base';
-@use 'layout';
-@use 'partials/about-me';
-@use 'partials/experience';
-@use 'partials/projects';
-@use 'partials/contact';
+@use 'base' as *;
+@use 'mixins' as *;
+@use 'layout' as *;
+
+
+@use 'partials/about-me' as *;
+@use 'partials/experience' as *;
+@use 'partials/projects' as *;
+@use 'partials/contact' as *;

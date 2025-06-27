@@ -1,3 +1,4 @@
+@use './mixins' as *;
 /*header*/
 header {
 	background-color: var(--light-gray);
@@ -154,9 +155,17 @@ footer {
 		}
 	}
 }
+.icon-box a {
+			text-decoration: none;
+			color: var(--light-gray);
+
+			&:visited {
+				color: var(--light-gray);
+			}
+		}
 
 /*media (layout-specific)*/
-@media (max-width: 48rem) {
+@include breakpoint(smartphone) { 
 	header {
 		.header-img {
 			height: 15.625rem;
@@ -253,7 +262,7 @@ footer {
 	}
 }
 
-@media (min-width: 48.0625rem) {
+ @include breakpoint(desktop-up) {
 	.burger-menu {
 		display: none;
 	}
@@ -262,7 +271,9 @@ footer {
 	}
 }
 
-@media (min-width: 48.0625rem) and (max-width: 62rem) {
+@include breakpoint(tablet) {
+	
+	
 	header {
 		.header-txt {
 			h1 {
@@ -278,7 +289,7 @@ footer {
 	}
 }
 
-@media (min-width: 62.0625rem) {
+@include breakpoint(laptop) { 
 	header {
 		.header-txt {
 			h1 {

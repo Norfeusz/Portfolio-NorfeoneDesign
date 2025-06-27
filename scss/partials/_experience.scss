@@ -1,3 +1,4 @@
+@use '../mixins' as *;
 /*doświadczenie*/
 .experience-h2 {
 	margin: 5rem;
@@ -37,7 +38,7 @@
 }
 
 /*media (experience-specific)*/
-@media (max-width: 48rem) {
+@include breakpoint(smartphone) { 
 	.experience-table {
 		margin: 0.625rem auto;
 		font-size: 0.8125rem;
@@ -52,7 +53,7 @@
 	}
 }
 
-@media (min-width: 48.0625rem) {
+@include breakpoint(tablet) {
 	.experience-table {
 		margin: 0.625rem auto;
 		font-size: 1.25rem;

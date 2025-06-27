@@ -1,3 +1,4 @@
+@use '../mixins' as *;
 /*kontakt*/
 .contact-box {
 	margin: auto;
@@ -20,7 +21,7 @@
 }
 
 /*media (contact-specific)*/
-@media (max-width: 48rem) {
+@include breakpoint(smartphone) { 
 	.contact-box {
 		width: 90%;
 		font-size: 1.25rem;
@@ -28,14 +29,14 @@
 	}
 }
 
-@media (min-width: 48.0625rem) and (max-width: 62rem) {
+@include breakpoint(tablet) { 
 	.contact-box {
 		width: 80%;
 		font-size: 1.875rem;
 	}
 }
 
-@media (min-width: 62.0625rem) {
+@include breakpoint(laptop) { 
 	.animation {
 		position: relative;
 		width: 21.875rem;

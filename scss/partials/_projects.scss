@@ -1,3 +1,4 @@
+@use '../mixins' as *;
 /*projekty*/
 .project-box {
 	display: grid;
@@ -34,22 +35,7 @@
 }
 
 .project {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	border: solid 0.125rem var(--dark-gray);
-	border-top-left-radius: 2.5rem;
-	border-bottom-right-radius: 2.5rem;
-	background-size: cover;
-	background-position: center;
-	text-align: center;
-	overflow: hidden;
-	filter: grayscale(100%);
-	transition: filter 0.4s ease;
-
-	&:hover {
-		filter: grayscale(0%);
-	}
+    @include project-card-style; 
 }
 
 .project-menu {
@@ -71,21 +57,7 @@
 	overflow: hidden;
 
 	&-bg {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		backdrop-filter: blur(0.5rem);
-		background: linear-gradient(315deg, var(--gradient-start), var(--gradient-end));
-		padding: 0.625rem;
-		border-top-left-radius: 2.5rem;
-		border-bottom-right-radius: 2.5rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		box-sizing: border-box;
-		overflow: hidden;
+        @include project-menu-bg-style; 
 	}
 }
 
@@ -162,8 +134,8 @@
 	background-image: url('../img/drinks.png');
 }
 
-/*media (projects-specific)*/
-@media (max-width: 48rem) {
+
+@include breakpoint(smartphone) {
 	.projects-h2 {
 		margin: 2.5rem;
 	}
@@ -195,7 +167,7 @@
 	}
 }
 
-@media (min-width: 48.0625rem) and (max-width: 62rem) {
+@include breakpoint(tablet) {
 	.project-h3 {
 		font-size: 1.5625rem;
 	}
@@ -212,7 +184,7 @@
 	}
 }
 
-@media (min-width: 62.0625rem) {
+@include breakpoint(laptop) {
 	.project {
 		cursor: pointer;
 		transition: transform 0.3s;

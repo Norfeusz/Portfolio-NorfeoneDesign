@@ -1,0 +1,53 @@
+// Mixin dla responsywnych breakpointów
+@mixin breakpoint($size) {
+  @if $size == smartphone {
+    @media (max-width: 48rem) { @content; }
+  } @else if $size == tablet {
+    @media (min-width: 48.0625rem) and (max-width: 62rem) { @content; }
+  } @else if $size == laptop {
+    @media (min-width: 62.0625rem) { @content; }
+  } @else if $size == desktop-up { 
+    @media (min-width: 48.0625rem) { @content; } // min-width: 769px 
+  } @else {
+    @error "Nieznany rozmiar punktu przerwania: #{$size}. Użyj 'smartphone', 'tablet', 'laptop' lub 'desktop-up'.";
+  }
+}
+
+// Mixin dla stylu kart projektów
+@mixin project-card-style {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: solid 0.125rem var(--dark-gray);
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+
+    &:hover {
+        filter: grayscale(0%);
+    }
+}
+
+// Mixin dla wspólnego tła menu projektu (project-menu-bg)
+@mixin project-menu-bg-style {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0.5rem);
+    background: linear-gradient(315deg, var(--gradient-start), var(--gradient-end));
+    padding: 0.625rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
