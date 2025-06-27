@@ -1,0 +1,68 @@
+/*doświadczenie*/
+.experience-h2 {
+	margin: 5rem;
+}
+.experience-table {
+	display: inline-block;
+	margin: 1.25rem auto;
+	text-align: center;
+	font-size: 1.4375rem;
+
+	th {
+		text-transform: uppercase;
+		height: 5.625rem;
+	}
+
+	td {
+		height: 5.625rem;
+	}
+}
+
+.years-table {
+	width: 15.625rem;
+	border-bottom: solid;
+	border-right: solid;
+}
+.school-table {
+	width: 25rem;
+	border-bottom: solid;
+	border-right: solid;
+}
+.profile-table {
+	border-bottom: solid;
+	width: 15.625rem;
+}
+.bottom-table {
+	border-bottom: none;
+}
+
+/*media (experience-specific)*/
+@media (max-width: 48rem) {
+	.experience-table {
+		margin: 0.625rem auto;
+		font-size: 0.8125rem;
+
+		th {
+			height: 2.5rem;
+		}
+
+		td {
+			height: 3.125rem;
+		}
+	}
+}
+
+@media (min-width: 48.0625rem) {
+	.experience-table {
+		margin: 0.625rem auto;
+		font-size: 1.25rem;
+
+		th {
+			height: 3.125rem;
+		}
+
+		td {
+			height: 3.75rem;
+		}
+	}
+}

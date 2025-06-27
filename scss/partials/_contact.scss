@@ -1,0 +1,66 @@
+/*kontakt*/
+.contact-box {
+	margin: auto;
+	padding: 5rem;
+	width: 70%;
+	border: solid;
+	border-top-left-radius: 2.5rem;
+	border-bottom-right-radius: 2.5rem;
+	max-width: 88.75rem;
+}
+.enter {
+	visibility: hidden;
+}
+.contact-links {
+	color: var(--dark-gray);
+	text-decoration: none;
+}
+.fa-file-invoice {
+	margin-right: 0.9375rem;
+}
+
+/*media (contact-specific)*/
+@media (max-width: 48rem) {
+	.contact-box {
+		width: 90%;
+		font-size: 1.25rem;
+		padding: 3.125rem 0.3125rem;
+	}
+}
+
+@media (min-width: 48.0625rem) and (max-width: 62rem) {
+	.contact-box {
+		width: 80%;
+		font-size: 1.875rem;
+	}
+}
+
+@media (min-width: 62.0625rem) {
+	.animation {
+		position: relative;
+		width: 21.875rem;
+		margin: 0 auto;
+		margin-top: 0;
+		cursor: pointer;
+		margin-top: 2rem;
+
+		.email {
+			width: 34.375rem;
+		}
+		.margin-0 {
+			margin-top: 0.625rem;
+		}
+		.link-border {
+			position: absolute;
+			width: 0;
+			height: 0.125rem;
+			top: 100%;
+			left: 0;
+			background-image: linear-gradient(90deg, transparent, var(--blue));
+			transition: width 0.5s;
+		}
+		&:hover .link-border {
+			width: 100%;
+		}
+	}
+}

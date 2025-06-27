@@ -1,0 +1,174 @@
+/*o mnie*/
+.about-me-box {
+	position: relative;
+	height: 37.5rem;
+	margin: 2.5rem auto;
+	width: 95%;
+	background-size: cover;
+	background-position: 0;
+	background-attachment: fixed;
+	border-top-left-radius: 3.125rem;
+	border-bottom-right-radius: 3.125rem;
+	overflow: hidden;
+}
+
+.about-me-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: var(--darker-transparent-black);
+	z-index: 1;
+}
+
+.about-me-text {
+	position: absolute;
+	width: 100%;
+	color: var(--light-gray);
+	z-index: 10;
+
+	h3 {
+		position: absolute;
+	}
+}
+
+.about-me-p {
+	position: absolute;
+	text-align: justify;
+	width: 95%;
+}
+.about-me-btn {
+	background: none;
+	color: var(--light-gray);
+	border: none;
+}
+
+.private {
+	background-size: cover;
+	background-position: center;
+}
+
+/*media (about-me-specific)*/
+@media (max-width: 48rem) {
+	.about-me-box {
+		background-position: 34.375rem 2.8125rem;
+	}
+
+	.about-me-text {
+		font-size: 1.21875rem;
+		transform: none;
+
+		h3 {
+			left: 0.625rem;
+			top: 30.3125rem;
+			font-size: 2.25rem;
+		}
+	}
+
+	.multi-tasking {
+		background-image: url('../img/renesans-small.jpg');
+	}
+
+	.about-me-p {
+		margin-top: 0.625rem;
+		top: 0.625rem;
+		left: 0.3125rem;
+		transform: none;
+		text-align: justify;
+	}
+
+	.multi-tasking {
+		background-position: center;
+	}
+
+	.new-passion {
+		background-image: url('../img/new-passion-small.jpg');
+	}
+	.hobbies {
+		background-image: url('../img/hobbies-small.jpg');
+	}
+	.private {
+		background-image: url('../img/prive.jpg');
+	}
+}
+
+@media (min-width: 48.0625rem) {
+	.multi-tasking {
+		background-image: url('../img/renesans-big.jpg');
+	}
+	.new-passion {
+		background-image: url('../img/new-passion-big.jpg');
+	}
+	.hobbies {
+		background-image: url('../img/hobbies-big.jpg');
+	}
+	.private {
+		background-image: url('../img/prive.jpg');
+	}
+}
+
+@media (min-width: 48.0625rem) and (max-width: 62rem) {
+	.multi-tasking,
+	.new-passion,
+	.hobbies {
+		background-position: -34.375rem 0.3125rem;
+	}
+
+	.about-me-text {
+		font-size: 1.8125rem;
+
+		h3 {
+			top: 29.6875rem;
+			left: 2.5rem;
+			font-size: 4.0625rem;
+		}
+	}
+
+	.about-me-p {
+		margin: 0.625rem;
+		top: 0.625rem;
+		left: 0.3125rem;
+		transform: none;
+		text-align: justify;
+	}
+}
+
+@media (min-width: 62.0625rem) {
+	.about-me-text {
+		h3 {
+			margin-bottom: 2.5rem;
+			left: 1.25rem;
+			top: 1.25rem;
+			font-size: 5rem;
+			transition: font-size 0.3s, transform 1s;
+
+			&:hover {
+				position: absolute;
+				font-size: 7.5rem;
+			}
+		}
+	}
+
+	.about-me-p {
+		font-size: 2.1875rem;
+		top: -37.5rem;
+		left: 50%;
+		transform: translateX(-50%);
+		transition: transform 1s;
+	}
+
+	.about-me-p-visable {
+		position: absolute;
+		transform: translate(-50%, 38.4375rem);
+	}
+
+	.about-me-h3-visable {
+		transform: translate(0, 28.125rem);
+	}
+	.about-me-btn {
+		cursor: pointer;
+	}
+
+	.multi-tasking {
+		background-position: center;
+	}
+}

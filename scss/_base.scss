@@ -1,0 +1,63 @@
+:root {
+	/* Kolory (CSS Custom Properties - zmienne runtime) */
+	--blue: rgb(22, 48, 127);
+	--dark-gray: #000000;
+	--light-gray: #ddd;
+	--white: #ffffff;
+	--transparent-black: rgba(0, 0, 0, 0.3);
+	--darker-transparent-black: rgba(0, 0, 0, 0.6);
+	--blue-shadow: rgba(22, 48, 127, 0.5);
+	--gradient-start: rgba(255, 255, 255, 0.75);
+	--gradient-end: rgba(9, 136, 247, 0.75);
+
+	/* Rozmiar bazowy czcionki dla rem */
+	font-size: 16px;
+}
+
+/* Ustawienia globalne dla wszystkich elementów */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	caret-color: transparent;
+}
+
+body {
+	font-family: 'raleway', sans-serif;
+	transition: opacity 0.2s ease-in;
+}
+
+main {
+	margin-bottom: 6.25rem;
+	font-size: 2.5rem;
+	text-align: center;
+
+	h2 {
+		margin: 5rem;
+		text-transform: uppercase;
+	}
+}
+
+.english,
+.polish,
+.burger-english,
+.burger-polish {
+	position: absolute;
+	width: 1.875rem;
+	height: 1.875rem;
+	border-radius: 50%;
+	border: none;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+}
+
+.english,
+.burger-english {
+	background-image: url('../img/gb.png');
+}
+
+.polish,
+.burger-polish {
+	background-image: url(../img/pl.png);
+}
