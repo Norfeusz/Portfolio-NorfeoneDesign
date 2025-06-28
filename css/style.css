@@ -222,18 +222,21 @@ footer .fa-brands:hover {
     height: 15.625rem;
   }
   .burger-polish {
+    display: inline-block;
     position: absolute;
     left: 1.25rem;
     bottom: 0.625rem;
     border: 0.0625rem solid var(--blue);
   }
   .burger-english {
+    display: inline-block;
     position: absolute;
     left: 3.75rem;
     bottom: 0.625rem;
     border: 0.0625rem solid var(--blue);
   }
   .burger-icon {
+    display: block;
     position: absolute;
     right: 1.25rem;
     bottom: 0.3125rem;
@@ -260,6 +263,9 @@ footer .fa-brands:hover {
     overflow: hidden;
     display: block;
     transition: transform 0.5s;
+  }
+  .burger-menu.active {
+    transform: translateX(100vw);
   }
   .burger-menu .close-all {
     display: none;
@@ -288,12 +294,10 @@ footer .fa-brands:hover {
     color: var(--blue);
     cursor: pointer;
     transition: transform 0.3s;
+    background: none;
   }
   .burger-menu .close-menu:hover {
     transform: rotate(90deg) scale(1.5);
-  }
-  .burger-menu .active {
-    transform: translateX(100vw);
   }
   .nav-item {
     display: none;
@@ -388,19 +392,17 @@ footer .fa-brands:hover {
     background-position: 34.375rem 2.8125rem;
   }
   .about-me-text {
-    font-size: 1.21875rem;
+    font-size: 1.1375rem;
     transform: none;
   }
   .about-me-text h3 {
     left: 0.625rem;
-    top: 30.3125rem;
+    top: 31.9125rem;
     font-size: 2.25rem;
   }
-  .multi-tasking {
-    background-image: url("../img/renesans-smartphone.jpg");
-  }
   .about-me-p {
-    margin-top: 0.625rem;
+    margin-top: 0.725rem;
+    margin-left: 0.5rem;
     top: 0.625rem;
     left: 0.3125rem;
     transform: none;
@@ -409,25 +411,14 @@ footer .fa-brands:hover {
   .multi-tasking {
     background-position: center;
   }
-  .new-passion {
-    background-image: url("../img/new-passion-smartphone.jpg");
-  }
-  .hobbies {
-    background-image: url("../img/hobbies-smartphone.jpg");
-  }
-  .private {
-    background-image: url("../img/prive.jpg");
-  }
-}
-@media (min-width: 48.0625rem) {
   .multi-tasking {
-    background-image: url("../img/renesans-big.jpg");
+    background-image: url("../img/renesans-small.jpg");
   }
   .new-passion {
-    background-image: url("../img/new-passion-big.jpg");
+    background-image: url("../img/new-passion-small.jpg");
   }
   .hobbies {
-    background-image: url("../img/hobbies-big.jpg");
+    background-image: url("../img/hobbies-small.jpg");
   }
   .private {
     background-image: url("../img/prive.jpg");
@@ -486,6 +477,20 @@ footer .fa-brands:hover {
   }
   .multi-tasking {
     background-position: center;
+  }
+}
+@media (min-width: 48.0625rem) {
+  .multi-tasking {
+    background-image: url("../img/renesans-big.jpg");
+  }
+  .new-passion {
+    background-image: url("../img/new-passion-big.jpg");
+  }
+  .hobbies {
+    background-image: url("../img/hobbies-big.jpg");
+  }
+  .private {
+    background-image: url("../img/prive.jpg");
   }
 }
 /*doświadczenie*/

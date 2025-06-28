@@ -173,18 +173,21 @@ footer {
 	}
 
 	.burger-polish {
+		display: inline-block;
 		position: absolute;
 		left: 1.25rem;
 		bottom: 0.625rem;
 		border: 0.0625rem solid var(--blue);
 	}
 	.burger-english {
+		display: inline-block;
 		position: absolute;
 		left: 3.75rem;
 		bottom: 0.625rem;
 		border: 0.0625rem solid var(--blue);
 	}
 	.burger-icon {
+		display: block;
 		position: absolute;
 		right: 1.25rem;
 		bottom: 0.3125rem;
@@ -213,7 +216,9 @@ footer {
 		overflow: hidden;
 		display: block;
 		transition: transform 0.5s;
-
+  &.active {  
+    transform: translateX(100vw);
+  }
 		.close-all {
 			display: none;
 		}
@@ -242,15 +247,13 @@ footer {
 			color: var(--blue);
 			cursor: pointer;
 			transition: transform 0.3s;
+			background: none;
 
 			&:hover {
 				transform: rotate(90deg) scale(1.5);
 			}
 		}
 
-		.active {
-			transform: translateX(100vw);
-		}
 	}
 
 	.nav-item {
@@ -262,7 +265,7 @@ footer {
 	}
 }
 
- @include breakpoint(desktop-up) {
+ @include breakpoint(tablet-up) {
 	.burger-menu {
 		display: none;
 	}

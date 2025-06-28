@@ -1,18 +1,19 @@
 // Mixin dla responsywnych breakpointów
 @mixin breakpoint($size) {
-  @if $size == smartphone {
-    @media (max-width: 48rem) { @content; }
+  @if $size == mini {
+    @media (max-width: 30rem) { @content; } // 480px (30rem × 16) - bardzo małe telefony
+  } @else if $size == smartphone {
+    @media (max-width: 48rem) { @content; } // 768px (48rem × 16) - standardowe telefony
   } @else if $size == tablet {
-    @media (min-width: 48.0625rem) and (max-width: 62rem) { @content; }
+    @media (min-width: 48.0625rem) and (max-width: 62rem) { @content; } // 769-992px
   } @else if $size == laptop {
-    @media (min-width: 62.0625rem) { @content; }
-  } @else if $size == desktop-up { 
-    @media (min-width: 48.0625rem) { @content; } // min-width: 769px 
+    @media (min-width: 62.0625rem) { @content; } // 993px+ - laptopy i większe
+  } @else if $size == tablet-up { 
+    @media (min-width: 48.0625rem) { @content; } // 769px+ - tablet i większe
   } @else {
-    @error "Nieznany rozmiar punktu przerwania: #{$size}. Użyj 'smartphone', 'tablet', 'laptop' lub 'desktop-up'.";
+    @error "Unknown breakpoint size: #{$size}. Use 'mobile', 'smartphone', 'tablet', 'laptop' or 'tablet-up'.";
   }
 }
-
 // Mixin dla stylu kart projektów
 @mixin project-card-style {
     position: relative;

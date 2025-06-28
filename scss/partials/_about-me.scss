@@ -52,25 +52,26 @@
 @include breakpoint(smartphone) {
 	.about-me-box {
 		background-position: 34.375rem 2.8125rem;
+		
 	}
 
 	.about-me-text {
-		font-size: 1.21875rem;
+		font-size: 1.1375rem;
 		transform: none;
+		
 
 		h3 {
 			left: 0.625rem;
-			top: 30.3125rem;
+			top: 31.9125rem;
 			font-size: 2.25rem;
 		}
 	}
 
-	.multi-tasking {
-		background-image: url('../img/renesans-smartphone.jpg');
-	}
+	
 
 	.about-me-p {
-		margin-top: 0.625rem;
+		margin-top: 0.725rem;
+		margin-left: 0.5rem;
 		top: 0.625rem;
 		left: 0.3125rem;
 		transform: none;
@@ -80,32 +81,20 @@
 	.multi-tasking {
 		background-position: center;
 	}
-
-	.new-passion {
-		background-image: url('../img/new-passion-smartphone.jpg');
-	}
-	.hobbies {
-		background-image: url('../img/hobbies-smartphone.jpg');
-	}
-	.private {
-		background-image: url('../img/prive.jpg');
-	}
-}
-
-@include breakpoint(desktop-up) { 
 	.multi-tasking {
-		background-image: url('../img/renesans-big.jpg');
+		background-image: url('../img/renesans-small.jpg');
 	}
 	.new-passion {
-		background-image: url('../img/new-passion-big.jpg');
+		background-image: url('../img/new-passion-small.jpg');
 	}
 	.hobbies {
-		background-image: url('../img/hobbies-big.jpg');
+		background-image: url('../img/hobbies-small.jpg');
 	}
 	.private {
 		background-image: url('../img/prive.jpg');
 	}
 }
+
 
 @include breakpoint(tablet) { 
 
@@ -172,5 +161,19 @@
 
 	.multi-tasking {
 		background-position: center;
+	}
+}
+@include breakpoint(tablet-up) { 
+	.multi-tasking {
+		background-image: url('../img/renesans-big.jpg');
+	}
+	.new-passion {
+		background-image: url('../img/new-passion-big.jpg');
+	}
+	.hobbies {
+		background-image: url('../img/hobbies-big.jpg');
+	}
+	.private {
+		background-image: url('../img/prive.jpg');
 	}
 }
